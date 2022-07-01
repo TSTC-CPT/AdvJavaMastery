@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Mastery Assessment</title>
+    <meta charset="UTF-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+</head>
+<body>
+    <div id="title">
+        Polymorphism Mastery Assessment v1.1
+    </div>
+        <p>
+    Continue building and modifying the travel agency program by updating your previous assignment.  If any class doesn’t need need to be instantiated then make it abstract. Override the toString() method in each class.  Any object represented by one of the classes must be created and used as an object from that class (Customers, Hotels, etc).
+        </p>
+        <p>
+    Setup a polymorphic state machine to implement these 4 states of the program. Each state will operate out of a menu as shown below.
+        </p>
+    <ul>
+        <li>Customer View</li>
+        <li>Employee View</li>
+        <li>Manager View</li>
+        <li>Login</li>
+    </ul>
+    <b>Login State</b>
+    <ol>
+        <li>Login</li>
+        <li>Register</li>
+        <li>Continue as Guest</li>
+        <li>Exit</li>
+    </ol>
+    <p>
+    Login will prompt the user for a name and password. If the name and password match the registered name and password, the user will proceed to the Customer View. You will need to start the program with 1 employee and 1 manager. There names are Employee and Manager and their password is password. If the user logs in as either of these, the program will shift to the corresponding state.
+    </p>
+    <p>
+    Registry will keep track of customers in an array list. More permanent storage will be incorporated in future assignments, but for now the object data will only be held in memory. The user will be prompted for a name and password. Validate the password. Require a specific length, at least 1 capital letter, and 1 special character. Any new account will be a Customer.
+    </p>
+    <p>Continue as Guest will move straight to the Customer View. </p>
+    <b>Employee View</b>
+    <ol>
+        <li>Add Lodge</li>
+        <li>Remove Lodge</li>
+        <li>List Lodges</li>
+        <li>Log out</li>
+        <li>Manager View (only visible if logged in as a manager)</li>
+    </ol>
+    <p>Use an array list to maintain a list of lodges. Populate the list with at least 2 Lodges from each subclass. Implement all of the functionality listed in the menu above. 
+    </p>
+    <b>Manager View</b>
+    <ol>
+        <li>Add Employee</li>
+        <li>Remove Employee</li>
+        <li>List Employee</li>
+        <li>Make Employee A Manager</li>
+        <li>Manage Lodges (Switch to Employee View)</li>
+        <li>Log out</li>
+    </ol>
+    <p>
+    From the Manager View the user will be able to add and remove employees as well as promote regular employees to a manager position. Managers also have the ability to switch to the standard Employee View to manage the Lodges in the program. The program will need an array list with 2 employees preloaded into the program as mentioned above.
+    </p>
+    <b>Customer View</b>
+    <ol>
+        <li>View Lodges with price per night</li>
+            <ol type= "a">
+                <li>Select Lodge</li>
+                    <ol type = "I">
+                        <li>Enter number of days</li>
+                        </ol>
+                <li>Return to previous menu</li>
+            </ol>
+       <li>View Order</li> 
+            
+        <ol type="a">
+            <li>Confirm Order</li>
+            <li>Cancel Order</li>
+            <li>Return</li>
+        
+        </ol>
+        <li>Exit</li>
+       
+    </ol>
+    <p>
+    The customer will have 3 basic options as listed above. View Lodges will provide a number list of lodge names followed by the price per night. Selecting a lodge will then prompt for the number of nights. After the customer enters the number of nights, return to the main menu where they will have the option to view the order and total cost. Here they will have the options to confirm or cancel. Either option will clear the cart and provide an appropriate message. You may want to create an Order class to help manage this data.
+    </p>
+    <b>Modifications to main()</b>
+    <p>
+    Remove the test code from the previous assignment and setup a loop for your state machine. Create all of the objects for the states and start the program in the Login state.
+    </p>
+    
+        <p>
+            Rubric – All values are approximations and subject to change at the time of grading. There are countless ways to lose points even if all criteria below is met.
+        </p>
+        <div class=tableTitle>Rubric</div>
+        <table class="rubric" title = "table 3">
+           
+            <tr>
+                <td>Polymorphic State Machine developed as specified</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>Customer View as specified</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>Manager View as specified</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>Employee View as specified </td>
+                <td>25</td>
+            </tr>
+      
+        </table>
+    
+</body>
+</html>

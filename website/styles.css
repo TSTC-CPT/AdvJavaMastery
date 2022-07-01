@@ -36,7 +36,7 @@ table.table1, table.table1 tr, tabe.table1 td {
   
     border: 1px solid;
     border-collapse:collapse;
-    text-align: center;
+    text-align: left;
     margin: auto;
 
     
@@ -66,7 +66,11 @@ table.rubric tr:nth-child(odd){background-color: #ffa69e;}
 table.rubric tr:nth-child(even){background-color: #faf3dd;}
 table.rubric th:{background-color: indianred;}
 
-
+.tableTitle{
+    font-weight: bold;
+    text-align: center;
+    
+}
 
 
 @media screen and (max-width: 2190px) {
