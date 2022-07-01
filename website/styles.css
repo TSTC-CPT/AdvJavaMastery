@@ -1,0 +1,67 @@
+/*general*/
+
+html {
+    height: 100%;
+    background-color: ghostwhite;
+    margin:auto;
+    max-width: 1280px;
+    padding:30px;
+}
+
+body {
+    font-weight: 100
+    z-index: 1;
+    font-size: 20px;
+  //  padding: 250px;
+}
+
+p {
+    font-size: 11;
+    padding: 10px;
+    font-family: sans-serif;
+}
+#title{
+    font-size: 30px;
+    font-weight: bold; 
+    text-align: center;
+}
+   
+table.table1, table.table1 tr, tabe.table1 td {
+  
+    border: 1px solid;
+    border-collapse:collapse;
+    text-align: center;
+    margin: auto;
+    padding:  5px 30px 5px 30px;
+ 
+    
+}
+table.table1 tr:nth-child(even){background-color:#b8f2e6;}
+table.table1 tr:nth-child(odd){background-color: #faf3dd;}
+table.table1 th{
+  background-color: #a0dde6;
+    padding: 5px;
+      
+        
+}
+table.rubric, table.rubric tr, table.rubric td{
+  
+     border: 1px solid;
+    border-collapse:collapse;
+    text-align: center;
+    margin: auto;
+    padding:  5px 30px 5px 30px;
+    
+}
+table.rubric tr:nth-child(odd){background-color: #ffa69e;}
+table.rubric tr:nth-child(even){background-color: #faf3dd;}
+table.rubric th:{background-color: indianred;}
+
+
+
+
+@media screen and (max-width: 2190px) {
+    .content {
+        margin-top: 232px;
+    }
+}
