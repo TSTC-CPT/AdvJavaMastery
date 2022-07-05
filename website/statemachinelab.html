@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Mastery Assessment</title>
+    <meta charset="UTF-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+</head>
+<body>
+    <main>
+    <div id="title">
+       State Machine Lab
+    </div>
+        <p>Create a program that implements the finite state machine in the diagram below. Note this is not a UMLclass diagram, however you will need a class for each state of the program. All of these states will be derived from the abstract base class State. The base class will have static reference variables for an object from each subclass. It will also have a current staticreference variables to keep track of which state the program is in and a previous staticreference variable to keep track of the state the program was in last.</p>
+        
+        <p>The State class will have 2 abstract methods, enter() and update(). These methods will need definitions in all of the sub classes. </p>
+        <p>enter() will display the current state of the program and prompt the user with a menu of possible states to transition to.</p>
+        <p>update()  will accept the user’s input and set the State.current reference variable to the new state accordingly. State.previous will be updated here as well. You may use a switch or if/else statementsto handle this part of the code.</p>
+        <p>In main()  your code will be very simple. You will create an instance for each subclass in the program. Assign each static reference variable in State to the corresponding object.You will assign State.current to the starting state and then enter an infinite loop. In the loop you will call State.current.enter() followed by State.current.update(). Nothing else belongs in this loop.</p>
+        <p>Note that Exit is not a state, it is the end of the program. Follow the diagram. If a transition is not available on the diagram it should not be available in the program. For example, one should not be able to access Level 2 from Main Menu.</p>
+        <p>Some of the more obvious transition texts were left out to keep the diagram clean but they should still be in your program</p>
+        <p>The modular State Machine is a powerful design pattern that takes full advantage of polymorphism. It allows very complex programs to run at extremely high performance. They are easily organized by their classes so they also lend themselves nicely to team projects and countless other applications. I recommend hanging on to this project for future reference in your programming career.</p>
+        <div>
+        <img title="State Machine Diagram" src = "images/stateMachineDiagram.PNG" width = 100%>
+        </div>
+        
+        <p>Note: The lines leaving Save Game are “return” only. The machine should return from Save Game to whichever state it was previously in. There should not be a way to get from level 1 to level 3 by simply saving.</p>
+        <p>-</p>
+    </main>
+</body>
+</html>
