@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Mastery Assessment</title>
+    <meta charset="UTF-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+</head>
+<body>
+    <main>
+    <div id="title">
+       Advanced Inheritance Lab
+    </div>
+        <p>
+        Create an abstract base class called Itemwith member variables for name and value.   OverridethetoString() method for displaying the labeled values of the member variables. Provide a constructor to set default values. Add an abstract method called use(Item).
+        <br>
+  <div>
+        From Item derive 2 abstract classes, Tool and Consumable. Add the following members:
+      <ul>
+          <li>Tool</li>
+          <ul>
+              <li>public enum Grade {provide 3 grades of quality}</li>
+              <li>grade  -Grade</li>
+              <li>Tool()</li>
+              <li>toString()</li>
+              <li>use(Item)</li>
+          
+          </ul>
+          <li>Consumable</li>
+          <ul>
+            <li>numberOfCharges  -int</li>
+              <li>Consumable() </li>
+              <li>toString()</li>
+              <li>use(Item)</li>
+          </ul>
+      
+      </ul>
+        </div>
+        <div><p>
+           Overload the constructors in both classes.<br>
+            Create 2 subclasses derived from Tool and 2 subclasses derived from Consumable.<br>
+            Provide overloaded constructors, and override the toString() method for these 4 subclasses.<br>
+            Add at least 1 unique member variable to each of these classes. <br>
+            Write a definition for use(Item) that operates in the following way:<br>
+            At least 3 of your items need to interact with each other. <br>
+            All items must be usable independently. <br>
+            At least 2 items should be able to interact with another instance of the same item. <br>
+            In any case display a message to the screen to show the user what has taken place.<br>
+            </p></div>
+        <div><p>
+        In main() create 1 object for each of your items. Display the items in a menu and prompt the user for which item will be used. Then prompt for a second item to use the first item on. Call the use(Item)method based on the user’s input. Try to think of what to pass in when using an item independently.             
+            </p> </div>
+        Example output:<br>
+        <div class="code">
+        <ol>
+            <li>Lion</li>
+            <li>Honey</li>
+            <li>Jawbone of a donkey</li>
+            <li>Bottle</li>
+            <li>Nothing</li>
+            <li>Exit</li>
+        </ol>
+            <p class="code">Which item will you use: 4<br>
+                Which item will be used with the Bottle?: 4</p>
+            <p class="code"> You attempt to pour one bottle into the other but they are both empty.</p>
+        </div>
+        <p>  (loop from here)</p>
+        
+        
+    </main>
+</body>
+</html>
