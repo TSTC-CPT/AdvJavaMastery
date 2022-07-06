@@ -6,14 +6,18 @@ html {
     margin:auto;
     max-width: 1280px;
     padding:30px;
+
+}
+
+.unselectable{
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    user-select: none;
+    user-select: none;  
+    
 }
-
 body {
     font-weight: 100
     z-index: 1;
@@ -101,9 +105,14 @@ color:#000;
 text-align: center
 }
 /*code font*/
-.code{
+.code {
     font-family: "monowidth";
- 
+   -webkit-touch-callout: text ;
+    -webkit-user-select: text ;
+    -khtml-user-select: text ;
+    -moz-user-select: text ;
+    -ms-user-select: text ;
+    user-select: text ;
     
 }
 
@@ -113,3 +122,5 @@ text-align: center
         margin-top: 232px;
     }
 }
+
+
