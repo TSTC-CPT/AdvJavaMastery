@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Mastery Assessment</title>
+    <meta charset="UTF-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+</head>
+<body>
+    <div id="title">
+        Swing Mastery 
+    </div>
+    <main>
+    <div class=unselectable>
+    <p>For this assignment you will be moving the existing program into a GUI format using Java Swing. Each state of the program will have at least 1 window/form to operate out of. Try to arrange the components on the forms in a way that is organized and professional. Keep all of the forms the same size and in the same location on the screen.</p>
+    <p>Login<br>
+        Use the JLabel to label the inputs for name and password. Use JTextField or JPasswordField for input. Always mask the password field. This should look like a typical login form with <a class = info target = _blank href=https://docs.oracle.com/javase/tutorial/uiswing/components/button.html>JButtons<span>opens in new window</span></a> to Register, Login, Continue as Guest, or Exit. You may create a separate form for registering or incorporate that function into the login form. When the user is registering a new account provide real time updates on the strength and validity of the password using a KeyListener. You can use a label such as ‘must be x characters long’ or you may want to change the color of the field to red to indicate the password is insufficient. The indicator must be dynamic and change in real time as the password text is modified. </p>
+        <p>Customer View<br>
+        The customer view will provide a list of lodges read in from the file created in the previous assignment. There are several design options here, but the user must be able to scroll through the different lodges so a JScrollPane must be implemented. You may want to combined it with a JList or JTable to list the names of the lodges. All lodge information must be retrieved from the file for each lodge and displayed when that lodge is selected. Pictures will be added for each lodge in a later assignment so leave some room for a thumbnail viewing area. From this point the customer will need to be able to select a lodge and a date range for their stay. Use the calendar from the practice assignment as your date selection tool.</p>
+        <p>Employee View<br>
+            Transfer the functionality of the console based program into a swing application. Use the JScrollPane component with a JList or JTable to display the file contents. The employee will have the option to add pictures to the selected lodge in the next assignment so allow some room for that in your design. Use JButtons or a <a class = info href=https://docs.oracle.com/javase/tutorial/uiswing/components/menu.html target=_blank>menu<span>opens in new window</span></a> system to add, edit and remove lodges from the program. Use a <a class = info href =https://docs.oracle.com/javase/tutorial/uiswing/components/tabbedpane.html target =_blank>JTabbedPane<span>opens in new window</span></a> with tabs to separate the manager view from the employee view.  Disable or hide the manager tab when user is not a manager. </p>
+        <p>Manager View<br>
+            The manager view will also implement everything in the console program. No pictures will be needed here. Use a JTable and JScrollPane to organize and modify employee information. The information will need to be loaded and saved to the file. You may want to use JButtons or add a <a class = info href=https://docs.oracle.com/javase/tutorial/uiswing/components/menu.html target=_blank>menu<span>opens in new window</span></a> system to implement these functions in your program. Managers will be able to move freely between the employee view and the manager view by clicking on the corresponding tab.</p>
+        <p>Refinement<br>
+            Try to add polish to your program by making it robust and user friendly. Use labels or a non-editable text area to update the user of the current status of the program. If an employee adds a new lodge successfully it may be good to clear the fields for the next entry (depending on your design) Avoid using annoying popup message boxes to give status updates. Validate the user’s input and disable buttons that should not be clicked until there is valid input to work with.  Add color to your program. Use a pleasant pallet with good contrast. Check out <a class = info href =https://coolors.co/ target="_blank">coolors<span>opens in new window</span></a> for some good ideas and easy to use copy/paste color schemes. </p>
+    </div>
+    
+    </main>     
+            
+    
+</body>
+</html>
