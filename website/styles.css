@@ -115,6 +115,17 @@ text-align: center
     user-select: text ;
     
 }
+.flexList{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 11;
+    padding: 5px;
+    font-family: sans-serif;
+    
+}
+
+
 
 
 @media screen and (max-width: 2190px) {
