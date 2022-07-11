@@ -54,7 +54,7 @@ table.table1 tr:nth-child(odd){background-color: #faf3dd;}
 table.table1 th{
   background-color: #a0dde6;
     padding: 5px;
-      
+      text-align: center;
         
 }
 table.rubric, table.rubric tr, table.rubric td{
