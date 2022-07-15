@@ -17,6 +17,10 @@
         <p>For this assignment you will be setting up tables in your own MySQL database. Use the schema and login information provided by your instructor. Information in your program will now need to be saved and retrieved from the remote database, with the local files serving as a backup. This includes all account information, lodges, and images.</p>
         <p>Add images for the lodges in the program. From the Customer View each lodge will have several images reduced to the size of a thumbnail. If a user clicks on an image a larger viewing area will open that will allow the user to cycle through the images. </p>
         <p>The employee view will allow the user to add images to a lodge. Use the <a class = info target = "_blank" href="https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/javax/swing/JFileChooser.html">JFilechooser<span>opens in new window</span></a> to select image files and allow the employee to select multiple image files at once. The images will be stored in the database. You may want to create a separate table for the images or chain the byte arrays together as a single blob. Using a separate table is probably easier. Make sure each lodge can support as many images as the employee wants to add.</p>
+        <p>The Manager view will not encorperate any new funcitonality just make the current functions work with the database.</p>
+        <p>Add error handling to deal with automatically deal with a lost connection. If the user gets disconnected and attempts to access the database, 
+        use try/catch blocks to reestablish the connection. Provide a connection status indicator as a label on your application. Change the status text and
+        color when the conneciton is borken, reconnecting, or is connected. </p>
         <p>Optimize your program by reducing the number of calls to the database to as few as possible.</p>
         
     </div>
