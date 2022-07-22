@@ -22,17 +22,18 @@
         <a href="https://tstc-cpt.github.io/AdvJavaMastery/website/multithreadingmastery.html" target ="_blank">M6 Threading Mastery</a><br>
         <p><a href="https://tstc-cpt.github.io/AdvJavaMastery/website/groupProject.html" target ="_blank">Group project</a><br></p>
    
-   
-   
-   
-   
-   
-   
-   
-             
-   
-   
-        
         
     </body>
+
+    <script>
+    fetch('https://tstc.instructure.com/api/v1/courses/2344/students/submissions?student_ids[]=270&include[]=user&include[]=submission_comments&include[]=assignment&per_page=100&access_token=15531~On22xXx6ERHiv6f1ssIpi6ISdjmLLwzZzdhKH6FyCpXqIcjq7pQpi8aVAURDJNTt')
+.then(data => {
+return data.json();
+})
+.then(post => {
+console.log("id: ");
+console.log(post.id);
+});
+    </script>
 </html>
+
