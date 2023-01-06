@@ -14,14 +14,12 @@
     </div>
     <main>
     <div class=unselectable>
-     <p>Optimize your program by executing the queries in your program on a separate thread. When loading the data for the lodges, query the database for all of the information, including images, in a single query. Execute that query on its own thread. Update your application’s interface as each row from the result set is read in. You should be able to move about the program freely as the images and other data load in real time. </p>
-        <p>Add HTML reports to your program. Use CSS to add color and style to your reports. Customer reports will show order history for a given time frame. Employee reports will list the customers and their total spending for a given time frame. Manager reports will list total revenue for the lodges over a given time frame. All time frames will be selected with a GUI component such as a JComboBox. Open the report in the default browser and save a copy of the HTML file in a local folder called “Reports”. Store the Reports folder in the user's Documents folder (Windows OS). Generate the reports on a separate thread. </p>
-        
+     <p>Optimize your program by executing the queries in your program on a separate thread. When loading the data for the lodges, query the database for all of the information, including images, in a single query. Execute that query on its own thread. Update your application’s interface as each row from the result set is read in. You should be able to move about the program freely as the images and other data load in real time. If the program stalls during the query then the theading is not correct.</p>
+     
+            <p>Add error handling to automatically deal with a lost connection. If the user gets disconnected and attempts to access the database, 
+        use try/catch blocks to reestablish the connection. Provide a connection status indicator as a label on your application. Change the status text and
+        color when the connection is broken, reconnecting, or is connected. Check the connection statis on a loop using a separate thread and a timer.</p>
     </div>
-        <div >
-            You can use this code to get the path to the Documents folder: 
-            <div class=code>FileSystemView.getFileSystemView().getDefaultDirectory().getPath();</div>
-        </div>
     <p>
             Submission notes:
             The project must be turned in as a zipped Netbeans (Ant) project.<br>
