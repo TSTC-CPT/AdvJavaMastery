@@ -1,0 +1,114 @@
+/*general*/
+
+html {
+    height: 100%;
+    background-color: ghostwhite;
+    margin:auto;
+    max-width: 1280px;
+    padding:30px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body {
+    font-weight: 100
+    z-index: 1;
+    font-size: 20px;
+  //  padding: 250px;
+}
+
+p {
+    font-size: 11;
+    padding: 10px;
+    font-family: sans-serif;
+}
+#title{
+    font-size: 30px;
+    font-weight: bold; 
+    text-align: center;
+}
+   
+table.table1, table.table1 tr, tabe.table1 td {
+  
+    border: 1px solid;
+    border-collapse:collapse;
+    text-align: left;
+    margin: auto;
+
+    
+}
+table.table1 td{
+    padding: 5px 25px 5px 25px;    
+    
+}
+table.table1 tr:nth-child(even){background-color:#b8f2e6;}
+table.table1 tr:nth-child(odd){background-color: #faf3dd;}
+table.table1 th{
+  background-color: #a0dde6;
+    padding: 5px;
+      
+        
+}
+table.rubric, table.rubric tr, table.rubric td{
+  
+     border: 1px solid;
+    border-collapse:collapse;
+    text-align: left;
+    margin: auto;
+    padding:  5px 30px 5px 30px;
+    
+}
+table.rubric tr:nth-child(odd){background-color: #ffa69e;}
+table.rubric tr:nth-child(even){background-color: #faf3dd;}
+table.rubric th:{background-color: indianred;}
+
+.tableTitle{
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+link in new window warning
+   :focus { outline: 0; }
+a.info {
+position:relative;
+z-index:24;
+background-color:#ccc;
+color:#000;
+text-decoration:none
+}
+a.info:hover, a.info:focus, a.info:active {
+z-index:25;
+background-color:#ff0
+}
+a.info span {
+position: absolute;
+left: -9000px;
+width: 0;
+overflow: hidden;
+}
+a.info:hover span, a.info:focus span, a.info:active span {
+display:block;
+position:absolute;
+top:1em; left:1em; width:12em;
+border:1px solid #0cf;
+background-color:#cff;
+color:#000;
+text-align: center
+}
+/*code font*/
+.code{
+    font-family: "Lucida Console";
+     tab-size: 8;
+}
+
+
+@media screen and (max-width: 2190px) {
+    .content {
+        margin-top: 232px;
+    }
+}

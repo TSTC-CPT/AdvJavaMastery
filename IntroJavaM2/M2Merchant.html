@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>Intro Java</title>    </head>
+    <body>
+        <main>
+        <h1>Assignment</h1>
+   
+        <p>
+        A petulant merchant deals in various commodities that are produced by tribal people in the surrounding villages. There are generally 5 commodities commonly traded and the market fluctuates with supply and demand among the locals. The merchant extracts an exorbitant fee for his service on any given trade by charging an additional 10% on top of the base exchange rate. For example if a customer wants to trade eggs for salt and the exchange rate is 30 eggs for 1 pound of salt, then the customer must trade 33 eggs for the 1 pound of salt, or 30 eggs for 0.9 lbs of salt. 
+        </p>
+        <p>
+Some commodities such as salt can be broken into fractional values so a customer may trade for a ½ pound of salt. However some commodities such as eggs can only be traded in integer values. For these commodities the merchant always rounds down the amount received by the customer. If the customer wishes to trade a half pound of salt for eggs, the base exchange may be:</p>
+<center>½ lb salt → 15 eggs</center>
+        <p>After the merchant’s cut:</p>
+<center>15 eggs -10% = 13.5 eggs → 13 eggs for ½ lb salt.</center>
+<p>
+The exchange rates for all commodities are set by a standard value. Write a program that prompts the user for the value of each commodity. Use this standard value to calculate the base trade values of all commodities and print the results in table form. Afterwards reprint the table with the merchant’s exchange rates. Format numbers to show at most, 2 places after the decimal. Use typecasting to display integer values for items that must be sold whole. You may create your own item names but 2 must be traded as whole units.
+</p>
+        <div class="code">
+Sample output:<br><br>
+
+Enter the standard value for each item:<br>
+Raw Coal: 100<br>
+Wooden Arrow: 10<br>
+Chicken Egg: 1<br>
+Maple Log: 30<br>
+Sea Salt: 5<br><br>
+<center>Base Exchange</center><br>
+            
+   <pre class=code>     
+		Coal	|	Arrows	|       Eggs	|	Logs	|       Salt   	|
+-----------------------------------------------------------------------------------------
+1 Coal		1.0     |	10.0	|	100.0	|	3.33	|	20.0	|
+1 Arrow		0.1     |	1.0	|	10.0	|	0.33	|	2.0	|
+1 Egg		0.01	|	0.1	|	1.0	|	0.03	|	0.2	|
+1 Log		0.3  	|	3.0	|	30.0	|	1.0	|	6.0	|
+1 Salt		0.05	|	0.5	|	5.0	|	0.17	|	1.0	|
+</pre>
+<br>
+
+<br>
+<br>
+
+<center>Merchant’s Rates</center><br>
+<pre class=code>
+		Coal  	|	Arrows	|	Eggs	|	Logs	|	Salt	|
+-----------------------------------------------------------------------------------------
+1 Coal		0.9	|	9.0	|	90.0	|	3.0	|	18.0	|
+1 Arrow		0.09	|	0.0	|	9.0	|	0.3	|	1.8	|
+1 Egg		0.01	|	0.0	|	0.0	|	0.03	|	0.18	|
+1 Log		0.27	|	2.0	|	27.0	|	0.9	|	5.4	|
+1 Salt		0.05	|	0.0	|	4.0	|	0.15	|	0.9	|
+
+</pre>
+</div>
+</main>
+    </body>
+</html>
