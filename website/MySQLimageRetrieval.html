@@ -13,7 +13,7 @@
     <div id="title">
         Example code to fetch an image from MySQL
     </div>
-        <div class="code">
+        <code><pre>
         //A query to retrieve an image.
         String query = "SELECT img FROM imgtest WHERE imgname = 'taco'";
         PreparedStatement ps = con.prepareStatement(query);
@@ -35,7 +35,7 @@
        
         // Use the Image as needed in your program
         JLabel label = new Jlabel(img);
-        </div>
+       </pre></code>
     </main>
 </body>
 </html>
