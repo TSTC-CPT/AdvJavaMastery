@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Mastery Assessment</title>
+    <meta charset="UTF-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+</head>
+<body>
+    <main>
+    <div id="title">
+        Example code to fetch an image from MySQL
+    </div>
+        <div class="code">
+        //A query to retrieve an image.
+        String query = "SELECT img FROM imgtest WHERE imgname = 'taco'";
+        PreparedStatement ps = con.prepareStatement(query);
+        ResultSet rs = ps.executeQuery();ResultSetMetaData md = rs.getMetaData();
+       
+        // The image comes from a blob so into a blob it goes.
+        Blob imgBlob = null;
+        if(rs.next()){ 
+        
+        // calling rs.next() is important, won't work without it.
+        imgBlob = rs.getBlob("img"); // get the img based on column name or index
+        }
+        
+        // convert it to a byte array so Java can work with it.
+        byte[] b = imgBlob.getBytes(1, imgBlob.length());
+       
+        //Use the byte array to create an image
+        ImageIcon img = new ImageIcon(b);
+       
+        // Use the Image as needed in your program
+        JLabel label = new Jlabel(img);
+        </div>
+    </main>
+</body>
+</html>
