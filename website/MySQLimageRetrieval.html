@@ -21,10 +21,10 @@
        
         // The image comes from a blob so into a blob it goes.
         Blob imgBlob = null;
-        if(rs.next()){ 
         
-        // calling rs.next() is important, won't work without it.
-        imgBlob = rs.getBlob("img"); // get the img based on column name or index
+         // calling rs.next() is important, the code doesn't work without it.
+        if(rs.next()){ 
+           imgBlob = rs.getBlob("img"); // get the img based on column name or index
         }
         
         // convert it to a byte array so Java can work with it.
