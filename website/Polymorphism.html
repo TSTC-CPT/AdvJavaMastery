@@ -10,15 +10,15 @@
 </head>
 <body>
     <div id="title">
-        Polymorphism Mastery Assessment v1.13
+        Polymorphism Mastery Assessment v1.14
     </div>
         <p>
-    Continue building and modifying the travel agency program by updating your previous assignment.  If any class doesn’t need to be instantiated then make it abstract. Any object represented by one of the classes must be created and used as an object from that class (Customers, Hotels, etc). Do <strong>not use Strings</strong> to represent these objects. There are several menus in this program. Always use numbered menu options for input. Do not ask the user to type whole words when prompting for things like House or Hotel or true/false. Instead use single key menus such as:<br>
+    Continue building and modifying the travel agency program by updating your previous assignment.  If any class doesn’t need to be instantiated then make it abstract. Any object represented by one of the classes must be created and used as an object from that class (Customers, Hotels, etc). Do <strong>not use Strings</strong> to represent these objects. There are several menus in this program. Always use numbered menu options for input and take user input as a String. Use nextLine() rather than next() to reduce input errors. Do not ask the user to type whole words when prompting for things like House or Hotel or true/false. Instead use single key menus such as:<br>
             1. House<br>
             2. Hotel<br>
         </p>
         <p>
-    Setup a polymorphic state machine to implement these 4 states of the program. Use a separate file for each state class. Each state will operate out of a menu as shown below.
+    Setup a polymorphic state machine to implement these 4 states of the program. Use a separate java file for each state class. Each state will operate out of a menu as shown below.
         </p>
     <ul>
         <li>Customer View</li>
@@ -34,7 +34,7 @@
         <li>Exit</li>
     </ol>
     <p>
-    Login will prompt the user for a name and password. If the name and password match a registered name and password, the user will proceed to the Customer View. You will need to start the program with 1 employee and 1 manager. Their names are Employee and Manager and their password is password. If the user logs in as either of these, the program will shift to the corresponding state. These names and passwords are required to work for all future modules. 
+    Login will prompt the user for a name and password. If the name and password match a registered name and password, the user will proceed to the Customer View. You will need to start the program with 1 employee and 1 manager. Their names are Employee and Manager and their password is password. If the user logs in as either of these, the program will shift to the corresponding state. These 2 names and passwords are required to work for all future modules in this course. 
     </p>
     <p>
     Registry will keep track of customers in an array list. More permanent storage will be incorporated in future assignments, but for now the object data will only be held in memory. The user will be prompted for a name and password. Validate the password. Require a minimum length, at least 1 capital letter, and 1 special character. Any new account will be a Customer.
@@ -48,7 +48,7 @@
         <li>Log out</li>
         <li>Manager View (only visible if logged in as a manager)</li>
     </ol>
-    <p>Use an array list to maintain a list of lodges. Populate the list with at least 2 Lodges from each subclass. Implement all of the functionality listed in the menu above. Number any list you create for easy selection and a professional appearance. 
+    <p>Use an ArrayList to maintain a list of lodges. This ArrayList will need to be accessible from both the Employee view and the Customer view. You can choose between using a single ArrayList for all lodges or 2 separate lists for houses and hotels. These ArrayList must contain objects from your classes, not Strings. When a user selects 'Add Lodge', prompt the user for all of the data for the type of lodge they choose. Set all member variables for the new Lodge and then add the lodge to the ArrayList. Hardcode the list with at least 2 Lodges from each subclass. Implement all of the functionality listed in the menu above. Number any list you display for easy selection and a professional appearance. 
     </p>
     <b>Manager View</b>
     <ol>
@@ -60,7 +60,7 @@
         <li>Log out</li>
     </ol>
     <p>
-    From the Manager View the user will be able to add and remove employees as well as promote regular employees to a manager position. Managers also have the ability to switch to the standard Employee View to manage the Lodges in the program. The program will need an array list with 2 employees preloaded into the program as mentioned above. Number the list for easy selection. Manager's are not required to follow the password rules. A manager may choose any password when adding a new employee.
+    From the Manager View the user will be able to add and remove employees as well as promote regular employees to a manager position. Use the isManager boolean from the Employee class to determine if the user is a manager. Managers also have the ability to switch to the standard Employee View to manage the Lodges in the program. The program will need an ArrayList with 2 employees preloaded into the program as mentioned above. Use numbers when displaying the list for easy selection. Manager's are not required to follow the password rules. A manager may choose any password when adding a new employee.
     </p>
     <b>Customer View</b>
     <ol>
@@ -88,7 +88,7 @@
     </p>
     <b>Modifications to main()</b>
     <p>
-    Remove the test code from the previous assignment and setup a loop for your state machine. Create all of the objects for the states and start the program in the Login state.
+    Remove the test code from the previous assignment and setup a loop for your state machine. Create all of the objects for the states and start the program in the Login state. Maintain an object oriented structure throughout the program. 
     </p>
     <p>
             Submission notes:
