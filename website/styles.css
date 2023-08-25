@@ -10,12 +10,12 @@ html {
 }
 
 .unselectable{
-    -webkit-touch-callout: none;
+  /*  -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    user-select: none;  
+    user-select: none;  */
     
 }
 body {
@@ -125,7 +125,13 @@ text-align: center
     flex-wrap: wrap;
 }
 
-
+.centeredImage{
+      display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+    
+}
 
 
 @media screen and (max-width: 2190px) {
