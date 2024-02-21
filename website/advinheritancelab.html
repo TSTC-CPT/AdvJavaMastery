@@ -14,7 +14,7 @@
        Advanced Inheritance Lab
     </div>
         <p>
-        Create an abstract base class called Item with member variables for name and value. Override the toString() method for displaying the labeled values of the member variables. Provide a constructor to set default values. Add an abstract method called use(Item).
+        Create an abstract base class called Item with member variables for name and value. Override the toString() method for displaying the labeled values of the member variables. Provide a constructor to set default values. Add an abstract method called use(Item item).
         <br>
   <div>
         From Item derive 2 abstract classes, Tool and Consumable. Add the following members:
@@ -25,7 +25,7 @@
               <li>grade  -Grade</li>
               <li>Tool()</li>
               <li>toString()</li>
-              <li>use(Item)</li>
+              <li>use(Item item)</li>
           
           </ul>
           <li>Consumable</li>
@@ -33,7 +33,7 @@
             <li>numberOfCharges  -int</li>
               <li>Consumable() </li>
               <li>toString()</li>
-              <li>use(Item)</li>
+              <li>use(Item item)</li>
           </ul>
       
       </ul>
@@ -43,7 +43,7 @@
             Create 2 subclasses derived from Tool and 2 subclasses derived from Consumable.<br>
             Provide overloaded constructors, and override the toString() method for these 4 subclasses.<br>
             Add at least 1 unique member variable to each of these classes. <br>
-            Write a definition for use(Item) that operates in the following way:<br>
+            Write a definition for use(Item item) that operates in the following way:<br>
             At least 3 of your items need to interact with each other. <br>
             All items must be usable independently. <br>
             At least 2 items should be able to interact with another instance of the same item. <br>
