@@ -13,7 +13,7 @@
         Polymorphism Mastery Assessment v1.16
     </div>
         <p>
-    Continue building and modifying the travel agency program by updating your previous assignment.  If any class doesn’t need to be instantiated then make it abstract. Any object represented by one of the classes must be created and used as an object from that class (Customers, Hotels, etc). Do <strong>not use Strings</strong> to represent these objects. There are several menus in this program. Always use numbered menu options for input and take user input as a String. Use nextLine() rather than next() or nextInt() to reduce input errors. Convert numerical values from strings to the required data types. Keep your prompts short and business-professional rather than using polite, wordy English. Do not ask the user to type whole words when prompting for things like House or Hotel, or true/false. Instead use single key menus such as:<br>
+    Continue building and modifying the travel agency program by updating your previous assignment.  If any class doesn’t need to be instantiated then make it abstract. Any object represented by one of the classes must be created and used as an object from that class (Customers, Hotels, etc). Do <strong>not use Strings</strong> to represent these objects. Every variable and ArrayList must be a member of a class that needs it. There are several menus in this program. Always use numbered menu options for input and take user input as a String. Use nextLine() rather than next() or nextInt() to reduce input errors. Convert numerical values from strings to the required data types. Keep your prompts short and business-professional rather than using polite, wordy English. Do not ask the user to type whole words when prompting for things like House or Hotel, or true/false. Instead use single key menus such as:<br>
             1. House<br>
             2. Hotel<br>
         </p>
@@ -86,9 +86,9 @@
     <p>
     The customer will have 3 basic options as listed above. View Lodges will provide a numbered list of lodge names followed by the price per night. Selecting a lodge will then prompt for the number of nights. After the customer enters the number of nights, return to the main menu where they will have the option to view the order and total cost. Here they will have the options to confirm or cancel. Either option will clear the cart and provide an appropriate message. You may want to create an Order class to help manage this data.
     </p>
-    <b>Modifications to main()</b>
+    <b>Other notes</b>
     <p>
-    Remove the test code from the previous assignment and setup a loop for your state machine. Create all of the objects for the states and start the program in the Login state. Maintain an object oriented structure throughout the program. Avoid using annoying prompts such as "Press any key to continue".
+    Remove the test code from main() and setup a loop for your state machine. Create all of the objects for the states and start the program in the Login state. Maintain an object oriented structure throughout the program. Avoid using annoying prompts such as "Press any key to continue". If you need to access the member of a different state, typecast the handle to that state to gain access to those member variables. For example, if an ArrayList that is a member of EmployeeView is needed in CustomerView, use the reference varialbe in the State class, "employeeView", and typecast it as an "EmployeeView" to access the member ArrayList.
     </p>
     <p>
      Submission notes:
